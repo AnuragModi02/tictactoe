@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      html{
+        font-size: 62.5%;
+      }
+      
+      :root{
+        --blue-primary: #31C3BD;
+        --blue-secondary: #65E9E4;
+
+        --yellow-primary: #F2B137;
+        --yellow-secondary: #FFC860;
+
+        --black-primary: #1A2A33;
+        --black-secondary: #1F3641;
+
+        --gray-primary: #A8BFC9;
+        --gray-secondary: #D8E8Ed;
+
+        --heading-large: 40px;
+        --heading-medium: 24px;
+        --heading-small: 20px;
+        --heading-extra-small: 16px;
+      }
+
+      *, *::before, *::after {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {         
+          font-weight: lighter;
+          height: 100vh;
+          background-color: var(--black-primary);
+          font-family: "Outfit", sans-serif;;
+      }
+
+      #app {
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-align: center;
+          height: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      button {
+          /* font-family: 'MyWebFont', sans-serif; /* Added fallback * */
+      }
+
+      @font-face {
+          /* font-family: 'MyWebFont';
+          src: url('../src/assets/fonts/Rubik-VariableFont_wght.ttf') format('truetype'); Corrected path */
+      }
+    </style>
   </head>
+  
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
