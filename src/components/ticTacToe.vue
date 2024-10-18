@@ -255,7 +255,7 @@ button:hover {
     width: 100%;
     background-color: var(--black-secondary);
     gap: 20px;
-    padding-block: 20px;
+    padding: 20px;
     z-index: 1;
 }
 
